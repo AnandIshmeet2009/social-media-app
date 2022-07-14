@@ -1,25 +1,28 @@
 body{
-     padding: 0;
-     margin: 0;
-     height: 100vh;
-     width: 100vw;
-     background-color:#55185D ;
-     font-family: 'Lexend Deca', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #55185D;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 nav{
     width: 100vw;
     height: 4.5vw;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: #FFD524 ;
+    background-color: #FFD524;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-  nav ul{
-     display: flex;
-     margin-right: 13vw;
-  }
+nav ul{
+    display: flex;
+    margin-right: 13vw;
+}
 
 .logo{
     width: 10vw;
@@ -36,34 +39,11 @@ nav a{
     font-weight: 600;
 }
 
-
 nav .login{
     background-color: #55185D;
     color: white;
     border-radius: 0.5vw;
     padding: 0.6vw 1vw;
-}
-
-.verify{
-    width: 100vw;
-    height: 100vh;
-    background-color: #55185D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.verify-box{
-    width: 30vw;
-    height: 30vh;
-    background-color: #FFD524;
-    border-radius: 10px;
-    padding: 2vw;
-}
-
-.verify-head{
-    color: white;
 }
 
 .main{
@@ -78,7 +58,7 @@ nav .login{
     justify-content: center;
 }
 
-.main h1{
+.heading h1{
     color: white;
     font-size: 7vw;
     font-weight: bold;
@@ -91,6 +71,31 @@ nav .login{
     background: url('/assets/home.svg') no-repeat;
 }
 
+.about-main{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6vw;
+}
+
+.about-main h1{
+    color: white;
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+.about-heading{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vw;
+}
+
+.about-heading p{
+    width: 35vw;
+    color: white;
+    margin-top: -4vw;
+    font-weight: 400;
+}
+
 .illus2{
     height: 32vw;
     width: 32vw;
@@ -98,4 +103,3 @@ nav .login{
     padding-right: 5vw;
     background: url('/assets/about.svg') no-repeat;
 }
-
